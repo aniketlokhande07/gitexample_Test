@@ -24,11 +24,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6jI-FY-gRV">
+                                <rect key="frame" x="0.0" y="93" width="600" height="507"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="JzB-pz-fZN">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JzB-pz-fZN" id="jmq-Ty-Yit">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6jI-FY-gRV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lpf-FL-IPs"/>
+                            <constraint firstItem="6jI-FY-gRV" firstAttribute="top" secondItem="fjT-4z-rDc" secondAttribute="bottom" constant="8" id="UyP-ZK-DX8"/>
                             <constraint firstItem="fjT-4z-rDc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V5t-zZ-XCc"/>
                             <constraint firstItem="fjT-4z-rDc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vof-fS-4Mo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6jI-FY-gRV" secondAttribute="bottom" id="ZwN-5H-euB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6jI-FY-gRV" secondAttribute="trailing" id="jWT-l3-PYv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fjT-4z-rDc" secondAttribute="trailing" id="ybd-5w-7Ni"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -37,6 +55,7 @@
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="lbltitle" destination="fjT-4z-rDc" id="MZQ-sZ-Lhw"/>
+                        <outlet property="tblload" destination="6jI-FY-gRV" id="EEF-Rc-LOp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
