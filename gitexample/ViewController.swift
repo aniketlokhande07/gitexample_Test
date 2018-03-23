@@ -20,6 +20,9 @@ class ViewController: UIViewController {
            print(hello)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        lbltitle.text  =  "Welcome to new project"
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
