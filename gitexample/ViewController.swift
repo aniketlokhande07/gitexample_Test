@@ -27,7 +27,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         var hello = "welcome"
            print(hello)
         arr.append("register")
-        
+        arr.append("register again")
         arr.append("Delete")
     }
  
