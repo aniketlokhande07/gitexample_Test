@@ -11,4 +11,5 @@ class sampleobjec : NSObject {
     
     var id = ""
     var name = ""
+    var status = ""
 }
